@@ -12,3 +12,22 @@ print(ob._shopping__item1)
 
 #In this program i have created a class and there is 2 functions created inside the class. Where i made one of the attribute as private, if we want to access that attribute 
 #in our code we need to add "name mangling".
+
+class shopping():
+    def __init__(self):
+        self.name2 = "kesavan"
+        self.__name1 = "mahendra"
+
+    def Names(self):
+        return self.name2 + " : " + self.__name1
+
+    def set__name1(self, x):
+        self.__name1 = x
+
+    def get__name1(self):
+        return self.__name1
+ob = shopping()
+ob.set__name1("moorthy")
+print(ob.Names())
+
+# here understanding get and set method
