@@ -1,0 +1,14 @@
+class shopping():
+    def __init__(self):
+        self.__item1 = 10
+        self.item2 = 20
+    def totalitem(self):
+        return self.__item1 + self.item2
+
+ob = shopping()
+print(ob.totalitem())
+print(ob._shopping__item1)
+
+
+#In this program i have created a class and there is 2 functions created inside the class. Where i made one of the attribute as private, if we want to access that attribute 
+#in our code we need to add "name mangling".
