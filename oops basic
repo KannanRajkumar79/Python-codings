@@ -1,0 +1,24 @@
+#oops
+
+class marks():
+    def __init__(self, English, Tamil, Maths):
+        self.English = English
+        self.Tamil = Tamil
+        self.Maths = Maths
+
+    def passorfail(self):
+        if (self.English>=35)&(self.Tamil>=35)&(self.Maths>=35):
+            return True
+        else:
+            return False
+
+    def totalmark(self):
+        c = self.English+self.Tamil+self.Maths
+        if (c >= 110):
+            print("your total mark is : ",c)
+        else:
+            print("your total mark is :",c)
+
+a = marks(35,35,35)
+print(a.passorfail())
+print(a.totalmark())
